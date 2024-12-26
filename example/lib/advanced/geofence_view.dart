@@ -95,7 +95,7 @@ class _GeofenceViewState extends State<GeofenceView> {
     Navigator.of(context).pop();
 
     bg.BackgroundGeolocation.geofences.then((geofences) {
-      print(geofences);
+      print('Geofences: $geofences');
     }).catchError((error) {
       print('Failed to retrieve geofences: $error');
     });
